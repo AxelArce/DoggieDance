@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: disco;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#volume {
+    font-size: 40px;
+    margin-top: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+@keyframes disco {
+    0% {
+        background: #447062;
+    }
+    20% {
+        background: #07724F;
+    }
+    40% {
+        background: #00734D;
+    }
+    60% {
+        background: #445C6B;
+    }
+    80% {
+        background: #02466E;
+    }
+    100% {
+        background: #142975;
+    }
+}
